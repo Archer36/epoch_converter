@@ -3,6 +3,7 @@
 import argparse
 import datetime
 
+
 def main():
     print()
     print("Epoc in local time ({}): {}".format(datetime.datetime.now().astimezone().tzname(),
