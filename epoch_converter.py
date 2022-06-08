@@ -6,9 +6,8 @@ import datetime
 
 def main():
     print()
-    print("Epoch in local time ({}): {}".format(datetime.datetime.now().astimezone().tzname(),
-                                                datetime.datetime.fromtimestamp(args.epoch)))
-    print("Epoch in UTC: {}".format(datetime.datetime.utcfromtimestamp(args.epoch)))
+    print(f"Epoch in local time ({datetime.datetime.now().astimezone().tzname()}): {datetime.datetime.fromtimestamp(args.epoch)}")
+    print(f"Epoch in UTC: {datetime.datetime.utcfromtimestamp(args.epoch)}")
 
 
 if __name__ == "__main__":
